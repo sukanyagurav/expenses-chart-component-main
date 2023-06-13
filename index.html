@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-cream flex flex-col justify-center items-center h-screen px-3">
+  <header class="bg-softRed flex items-center justify-between rounded-lg px-4 md:px-6 py-4 w-full max-w-lg text-cream gap-9">
+  <div>
+    <p class="text-sm">My balance</p>
+    <h2 class="text-2xl mt-3 font-bold">$921.48</h2>
+  </div>
+  <img src="images/logo.svg" alt="logo" class="ml-auto">
+  </header>
+  <main class="flex  flex-col justify-between rounded-lg  px-4 md:px-7 py-5 w-full max-w-lg bg-paleOrange mt-4">
+    <h1 class="text-darkBrown text-2xl font-bold mb-5">Spending - Last 7 days</h1>
+    <!-- bar -->
+    <section id="barContainer" class="pt-20 pb-4 flex gap-2 md:gap-3 justify-between items-end">
+  
+    </section>
+    <div class="pt-3 flex justify-between border-t border-cream">
+      <div>
+        <p class="text-mediumBrown">Total This month</p>
+        <h2 class="text-darkBrown text-3xl font-bold">$478.33</h2>
+      </div>
+      <div class="self-end text-right">
+        <span class="text-darkBrown text-sm">+2.4%</span>
+        <p class="text-mediumBrown">from last month</p>
+      </div>
+    </div>
+  </main>
+  <footer class="text-softRed mt-2">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">SG</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
