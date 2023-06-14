@@ -705,6 +705,11 @@ video {
   padding-right: 0.125rem;
 }
 
+.px-\[0\.3rem\] {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -750,6 +755,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .text-cream {
