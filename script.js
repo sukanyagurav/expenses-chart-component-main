@@ -34,7 +34,7 @@ async function getData(){
         }
         bar.addEventListener('mouseover',function(e){
                 popup =document.createElement('div')
-                popup.className = 'bg-darkBrown text-cream px-[0.3rem]  py-1 absolute -top-16 -left-2 rounded-md text-[0.9rem] md:text-lg font-extrabold'
+                popup.className = 'bg-darkBrown text-cream px-[0.29rem]  py-1 absolute -top-16 -left-2 rounded-md text-[0.9rem] md:text-lg font-extrabold'
                 popup.textContent='$'+data[+e.target.id].amount
                 bar.append(popup)
         })
