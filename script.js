@@ -7,12 +7,13 @@ function createBar(day,amount,index){
     const div=document.createElement('div')
     div.className='flex flex-col items-center'
     const inner=document.createElement('div')
-    inner.className=`bg-softRed w-9 md:w-12 relative rounded-md bar cursor-pointer`
+    inner.className=`bg-softRed w-9 md:w-12 relative animate-increaseBar rounded-md bar cursor-pointer origin-bottom`
     inner.id=index
-    inner.style.height=(amount * 3) +'px'
+    
+     inner.style.height=(amount * 3) +'px'
     div.append(inner)
     const p=document.createElement('p')
-    p.className='text-mediumBrown text-sm mt-3'
+    p.className='text-mediumBrown text-sm mt-3 animate-textClip'
     p.innerHTML=day
     div.append(p)
     barContainer.append(div);
@@ -33,13 +34,17 @@ async function getData(){
             bar.classList.remove('active');  
         }
         bar.addEventListener('mouseover',function(e){
+                // bar.classList.add('transition duration-150 opacity-75')
+                bar.classList.add('hoverTransition');  
                 popup =document.createElement('div')
-                popup.className = 'bg-darkBrown text-cream px-[0.29rem]  py-1 absolute -top-16 -left-2 rounded-md text-[0.9rem] md:text-lg font-extrabold'
+                popup.className = 'bg-darkBrown text-cream px-[0.29rem]  py-1 absolute -top-16 -left-2 rounded-md text-[0.9rem] md:text-lg font-extrabold animate-fromTop'
                 popup.textContent='$'+data[+e.target.id].amount
                 bar.append(popup)
         })
         bar.addEventListener('mouseout',function(e){
-           popup.remove()
+            popup.classList.remove('animate-fromTop')
+            bar.classList.remove('hoverTransition'); 
+            popup.remove()
         })
     })
 }

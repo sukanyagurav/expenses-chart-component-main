@@ -20,8 +20,31 @@ module.exports = {
       fontFamily:{
         sans:['DM Sans','sans-serif']
       },
+      keyframes: {
+        
+        fromTop: {
+          'from': {
+              opacity: '0',
+              transform: 'translateY(20px)'
+          },
+      
+          'to': {
+              opacity: '1',
+              transform: 'translateY(0)'
+          }
+      },
+      
+    },
+      animation: {
+        fromTop: 'fromTop 0.7s ease-in-out both',
+        textClip:'textClip 2.2s ease-in-out both',
+        increaseBar:'increaseBar 2.2s ease-in-out both'
+      }
     },
   },
-  plugins: [],
+  plugins: [
+
+    require('tailwind-clip-path'),
+  ],
 }
 
