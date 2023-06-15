@@ -37,14 +37,14 @@ module.exports = {
     },
       animation: {
         fromTop: 'fromTop 0.7s ease-in-out both',
-        textClip:'textClip 2.2s ease-in-out both',
+        textClip:'textClip 1s ease-in-out both',
         increaseBar:'increaseBar 2.2s ease-in-out both'
       }
     },
   },
   plugins: [
 
-    require('tailwind-clip-path'),
+    require('tailwind-clip-path')
   ],
 }
 
